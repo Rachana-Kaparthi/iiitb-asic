@@ -1,3 +1,4 @@
+Day0  
 <details>
  <summary>
 Yosys
@@ -22,9 +23,9 @@ Below is the screenshot of successful launch
  <details>
   <summary> iverilog </summary>
 I installed iverilog using the following command:  
-```
+  ```
   sudo apt-get install iverilog  
-```
+  ```
 Below is the screenshot of the successful installation:  
 ![Screenshot from 2023-07-31 09-45-22](https://github.com/Rachanaka/iiitb-asic/assets/140998470/da2a4199-d7b0-47a6-8e00-989bd6d55640)
 
