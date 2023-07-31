@@ -1,5 +1,5 @@
 # Day0
-
+<details>
  <summary>
 Yosys
  </summary>
