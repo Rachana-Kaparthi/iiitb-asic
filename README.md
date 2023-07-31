@@ -1,4 +1,5 @@
-Day0  
+<details>
+ <summary> Day0 </summary> 
 <details>
  <summary>
 Yosys
@@ -46,5 +47,5 @@ sudo apt install gtkwave
 Below is the screenshot of successful installation:
 ![Screenshot from 2023-07-31 09-51-17](https://github.com/Rachanaka/iiitb-asic/assets/140998470/31e183cb-ab80-49c0-b87c-cc295c44fd56)
 
-
+</details>
 </details>
