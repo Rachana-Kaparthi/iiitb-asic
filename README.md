@@ -1,4 +1,5 @@
-# Day0
+[Day 0](#day-0)
+## Day0
 <details>
  <summary>
 Yosys
