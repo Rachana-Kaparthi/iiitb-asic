@@ -52,3 +52,31 @@ Below is the screenshot of successful installation:
 
 ## Day1  
 
+<details>
+ <summary> Summary </summary>
+
+This section shows how I simulated and synthesized a 2x1 mux using iverilog and yosys respectively. iverilog generates from the RTL design and its testbench a value changing dump file (vcd). gtkwave is the tool used to plot the simulation results of the design. Yosys is a tool which synthesizes RTL designs into a netlist. It is also used to test the synthesized netlist when we provide it with a testbench.
+
+</details>	
+	
+<details>
+ <summary> Verilog codes </summary>
+The verilog codes of the 2x1 mux (good_mux.v) and its testbench (tb_good_mux.v) are taken from https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+
+</details>
+
+ <details>
+ <summary> Simulation: iverilog and gtkwave </summary>
+ 
+ I used the following commands to simulate and view the plots of the RTL design:
+	
+ ```bash
+ iverilog <name verilog: good_mux.v> <name testbench: tb_good_mux.v>
+ ./a.out
+ gtkwave tb_good_mux.vcd
+ ```
+	
+ Below is the screenshot of the gtkwave plots:  
+ ![Screenshot-3](https://github.com/Rachanaka/iiitb-asic/assets/140998470/0a89c2ff-77c7-4619-b16c-7038006f93e7)
+</details>
+
