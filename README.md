@@ -78,5 +78,33 @@ The verilog codes of the 2x1 mux (good_mux.v) and its testbench (tb_good_mux.v) 
 	
  Below is the screenshot of the gtkwave plots:  
  ![Screenshot-3](https://github.com/Rachanaka/iiitb-asic/assets/140998470/0a89c2ff-77c7-4619-b16c-7038006f93e7)
-</details>
+</details>  
+
+<details>
+ <summary> Synthesis: Yosys </summary>
+	
+ In the directory of the verilog files, I used the following commands to synthesize and view the synthesized deisgn:
+	
+ ```bash
+yosys> read_liberty -lib <path to lib file>
+yosys> read_verilog <path to verilog file>
+yosys> synth -top <top_module_name>
+yosys> abc -liberty <path to lib file>
+yosys> show
+ ```
+ Below is the screenshot of the synthesized design:  
+ ![Screenshot-1](https://github.com/Rachanaka/iiitb-asic/assets/140998470/ef3abf2d-5fe7-478a-adc8-4d71e10d6ffc)  
+
+ I used the following commands to generate the netlist:
+ ```bash
+ yosys> write_verilog <file_name_netlist.v>
+ yosys> write_verilog -noattr <file_name_netlist.v>
+ ```
+ 
+ Below is the screenshot of the generated netlist:  
+ ![Screenshot-2](https://github.com/Rachanaka/iiitb-asic/assets/140998470/871e9051-4cc0-40b3-845e-35f6eab87caf)  
+ </details>  
+ 
+ 
+	
 
