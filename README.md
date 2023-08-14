@@ -124,7 +124,7 @@ Process variation talks about the variations encountered during the fabrication 
 	 - fast  <br>
 	 - typical  <br>
 Typical operating conditions used in the library are -  
-![Operating conditions](https://github.com/Rachanaka/iiitb-asic/blob/main/images/operating_conditions.png)  
+![Operating conditions](./images/operating_conditions.png)  
 We can also find multiple cells with the definition of same and gate but variation in spa
 	 
  </details>
