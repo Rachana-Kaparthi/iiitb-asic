@@ -54,7 +54,7 @@ Below is the screenshot of successful installation:
 
 </details>  
 
-## Day1  
+## Day1 - Instroduction to Synthesis using Yosys   
 
 <details>
  <summary> Summary </summary>
@@ -108,6 +108,8 @@ yosys> show
  Below is the screenshot of the generated netlist:  
  ![Screenshot-2](https://github.com/Rachanaka/iiitb-asic/assets/140998470/871e9051-4cc0-40b3-845e-35f6eab87caf)  
  </details>  
+
+ 
  
  
 	
