@@ -272,7 +272,8 @@ assign *y=a?(b?c:(c?a:0)):(!c)*
 Upon simplication it turns out to be y=ac+a'c' which can be implemented just by nand gate instead of three 2:1 multiplexers by optimising the logic.  
 
 Realizing combinational circuit optimization using some examples in the lab- 
-Example 1:
+
+Example 1:  
 Below is the code present in a file named opt_check:  
 ```
 module opt_check (input a , input b , output y);
@@ -280,7 +281,15 @@ module opt_check (input a , input b , output y);
 endmodule
 
 ```
-
+The above code is synthesized in yosys using following commands-  
+```bash
+yosys> read_liberty -lib <path to lib file>
+yosys> read_verilog <path to verilog file>
+yosys> synth -top <top_module_name>
+yosys> opt_clean -purge
+yosys> abc -liberty <path to lib file>
+yosys> show
+ ```
 ### Sequential logic optimisation techniques-  
 1.Basic  
  	   - Sequential constant propagation  
