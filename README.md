@@ -168,10 +168,11 @@ yosys> show
  ```
 Below is the output of the file using Flat approach -  <br>
 ![multiple_module_flat](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_module_flat.png)
+So, it can be clearly seen that, the command 'flatten' in Yosys will traverse through the hierarchy of the design and replace all the instances of submodules with their respective module implementations. This creates a flat representation of the design where there is no longer any hierarchy of the modules.  
+
 Below is the difference between the generated netlists in both the the cases -
 ![multiple_module_hier_vs_flat](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_module_heir_vs_flat.png)  
 
-From the 
 		
 </details> 
  
