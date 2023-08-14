@@ -253,7 +253,7 @@ Given below is the output of the synthesizer for the same -
 	
 In digital logic, we know that there are 2 types of logics, Combinational logic and Sequential logic. Whatever logic we might be using, optimisation of the logic plays an important role in minimizing the area as well as saving the power. So, in this session we are gonna discuss about some optimisation techniques both in combinational logic and sequential logic.  
 
-Combinational logic optimisation techniques-  
+Combinational logic optimisation techniques -  
         1.Constant propagation  
              - Direct optimisation  
 	2.Boolean logic optimisation  
