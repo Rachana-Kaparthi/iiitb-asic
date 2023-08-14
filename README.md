@@ -356,7 +356,8 @@ Consider below example-
 ![seq_const](https://github.com/Rachanaka/iiitb-asic/blob/main/images/seq_const.jpeg)  
 In this example, Q is always 0 irrespective of reset or clock inputs there by making output y= 1 always. but the same example does not hold good if there is set input instead of reset input as Q then can receive either 0 or 1 based on set and clock inputs and is not constant. 
 
-Trying to realize the above logic using some examples in the lab:  
+Trying to realize the above logic using some examples in the lab: 
+
 **Example 1**  
 Below is the code present in a file named dff_const1.v:  
 ```
@@ -439,9 +440,57 @@ endmodule
 ```
 **Simulation output:**  
 ![dff_const4_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const4_simulation.png)  
+**Synthesis output**  
+
+**Example 4**  
+Below is the code present in a file named dff_const4.v:  
+```
+module dff_const4(input clk, input reset, output reg q);
+reg q1;
+
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+	begin
+		q <= 1'b1;
+		q1 <= 1'b1;
+	end
+	else
+	begin
+		q1 <= 1'b1;
+		q <= q1;
+	end
+end
+endmodule
+```
+**Simulation output:**  
+![dff_const4_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const4_simulation.png)  
 **Synthesis output**
 
+**Example 5**  
+Below is the code present in a file named dff_const5.v:  
+```
+module dff_const5(input clk, input reset, output reg q);
+reg q1;
 
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+	begin
+		q <= 1'b0;
+		q1 <= 1'b0;
+	end
+	else
+	begin
+		q1 <= 1'b1;
+		q <= q1;
+	end
+end
+endmodule
+```
+**Simulation output:**  
+![dff_const5_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const5_simulation.png)  
+**Synthesis output**
 
 
 </details>	
