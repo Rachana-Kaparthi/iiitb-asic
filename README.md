@@ -247,7 +247,8 @@ Given below is the output of the synthesizer for the same -
 ![mult_8](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mult_8.png)
 </details>
  
-## Day3 - ABC  
+## Day3 - Combinational and Sequential Logic optimisations  
+
  
 
  
