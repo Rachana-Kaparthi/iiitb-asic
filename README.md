@@ -270,6 +270,17 @@ So from implementing Y logic using and, or gates, if A = 0 logic would be optimi
 Consider a statement where it states as below  
 assign *y=a?(b?c:(c?a:0)):(!c)*  
 Upon simplication it turns out to be y=ac+a'c' which can be implemented just by nand gate instead of three 2:1 multiplexers by optimising the logic.  
+
+Realizing combinational circuit optimization using some examples in the lab- 
+Example 1:
+Below is the code present in a file named opt_check:  
+```
+module opt_check (input a , input b , output y);
+	assign y = a?b:0;
+endmodule
+
+```
+
 ### Sequential logic optimisation techniques-  
 1.Basic  
  	   - Sequential constant propagation  
