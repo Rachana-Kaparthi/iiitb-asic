@@ -259,8 +259,17 @@ Combinational logic optimisation techniques -
 	2.Boolean logic optimisation  
 	     - K Map  
   	     - Quine Mckluskey algorithms  
-  
-  
+**Constant Propagation**
+Let us take an example to discuss about this:  
+Consider Y=(AB+C)'  
+If A = 0 then Y = C'  
+So from implementing Y logic using and, or gates, if A = 0 logic would be optimised to Y=C' which can be implemented by just an inverter there by reducing area and saving power.  
+
+**Boolean Logic Optimisation**  
+Consider a statement where it states as below  
+assign y=a?(b?c:(c?a:0)):(!c)  
+Upon simplication it turns out to be y=ac+a'c' which can be implemented just by nand gate instead of three 2:1 multiplexers by optimising the logic.  
+
 	
 </details>
  
