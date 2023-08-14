@@ -1,6 +1,6 @@
 This repository summarizes the day to day progress made during the VSD Tapout program -
 
-([#day0 - Installation of the required tools)](https://github.com/Rachanaka/iiitb-asic/blob/main/README.md#day0---installation-of-the-required-tools)  
+[Day0 - Installation of the required tools)](https://github.com/Rachanaka/iiitb-asic/blob/main/README.md#day0---installation-of-the-required-tools)  
 [Day 1](#day-1)  
 [Day 2](#day-2)  
 [Day 3](#day-3)
