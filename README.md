@@ -374,6 +374,7 @@ endmodule
 **Simulation output:**  
 ![dff_const1_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const1_simulation.png)  
 **Synthesis output**
+![dff_const1_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const1_synthesis.png)  
 
 **Example 2**  
 Below is the code present in a file named dff_const2.v:  
@@ -391,6 +392,7 @@ endmodule
 **Simulation output:**  
 ![dff_const2_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const2_simulation.png)  
 **Synthesis output**
+![dff_const2_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const2_synthesis.png)  
 
 **Example 3**  
 Below is the code present in a file named dff_const3.v:  
@@ -416,6 +418,7 @@ endmodule
 **Simulation output:**  
 ![dff_const3_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const3_simulation.png)  
 **Synthesis output**  
+![dff_const3_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const3_synthesis.png)  
 
 **Example 4**  
 Below is the code present in a file named dff_const4.v:  
@@ -466,6 +469,7 @@ endmodule
 **Simulation output:**  
 ![dff_const4_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const4_simulation.png)  
 **Synthesis output**
+![dff_const4_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const4_synthesis.png)  
 
 **Example 5**  
 Below is the code present in a file named dff_const5.v:  
@@ -491,6 +495,7 @@ endmodule
 **Simulation output:**  
 ![dff_const5_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const5_simulation.png)  
 **Synthesis output**
+![dff_const5_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const5_synthesis.png)  
 
 
 </details>	
