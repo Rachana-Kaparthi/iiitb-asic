@@ -162,8 +162,8 @@ yosys> synth -top <top_module_name>
 yosys> abc -liberty <path to lib file>
 yosys> show
  ```
-Below is the difference between the generated netlists in bothe the cases -
-![multiple_module_hier_vs_flat]
+Below is the difference between the generated netlists in both the the cases -
+![multiple_module_hier_vs_flat](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_module_heir_vs_flat.png)
 		
 </details> 
  
