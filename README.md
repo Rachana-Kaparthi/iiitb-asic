@@ -391,7 +391,7 @@ endmodule
 ```
 **Simulation output:**  
 ![dff_const2_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const2_simulation.png)  
-**Synthesis output**
+**Synthesis output**  
 ![dff_const2_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const2_synthesis.png)  
 
 **Example 3**  
@@ -444,31 +444,6 @@ endmodule
 **Simulation output:**  
 ![dff_const4_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const4_simulation.png)  
 **Synthesis output**  
-
-**Example 4**  
-Below is the code present in a file named dff_const4.v:  
-```
-module dff_const4(input clk, input reset, output reg q);
-reg q1;
-
-always @(posedge clk, posedge reset)
-begin
-	if(reset)
-	begin
-		q <= 1'b1;
-		q1 <= 1'b1;
-	end
-	else
-	begin
-		q1 <= 1'b1;
-		q <= q1;
-	end
-end
-endmodule
-```
-**Simulation output:**  
-![dff_const4_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const4_simulation.png)  
-**Synthesis output**
 ![dff_const4_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const4_synthesis.png)  
 
 **Example 5**  
@@ -494,7 +469,7 @@ endmodule
 ```
 **Simulation output:**  
 ![dff_const5_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const5_simulation.png)  
-**Synthesis output**
+**Synthesis output**  
 ![dff_const5_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const5_synthesis.png)  
 
 
