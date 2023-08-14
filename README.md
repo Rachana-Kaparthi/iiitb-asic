@@ -191,13 +191,18 @@ There are 2 types of reset/set inputs -
    I have synthesized D-flipflop using aynchronous set/reset and Synchronous set/reset inputs using Yosys, ouputs of which are given below -
 **Asynchronous Set**
 ![async_set](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_set.png)
+![async_set_yosys](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_set_yosys.png)
 **Asynchronous Reset**
 ![asynch_reset](https://github.com/Rachanaka/iiitb-asic/blob/main/images/asynch_reset.png)
+![async_reset_yosys](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_reset_yosys.png)
 **Asynchronous and Synchronous Reset**
 In this case, we have given both synchronous and asynchronous resets. Synchronous reset pin acts as an input the flop when clock goes high and asynchronous reset is independent of the clock.
 ![async_sync_reset](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_sync_reset.png)
+![async_sync_yosys](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_sync_yosys.png)
 **Synchronous reset**
 ![Synch_reset](https://github.com/Rachanaka/iiitb-asic/blob/main/images/Synch_reset.png)
+![sync_reset_yosys](https://github.com/Rachanaka/iiitb-asic/blob/main/images/sync_reset_yosys.png)
+
    
 </details>
  
