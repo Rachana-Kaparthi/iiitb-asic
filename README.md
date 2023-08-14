@@ -3,7 +3,7 @@ This repository summarizes the day to day progress made during the VSD Tapout pr
 [Day 0 - Installation of the required tools](#day0---installation-of-the-required-tools)  
 [Day 1 - Introduction to Synthesis using Yosys](#day1---introduction-to-synthesis-using-yosys)  
 [Day 2 - Hierarchical and Flat Synthesis ](#day2---hierarchical-and-flat-synthesis)   
-[Day 3 - Combinational and Sequential Logic optimisations](#day3---combinational-and-sequential-logic-optimisations)
+[Day 3 - Combinational and Sequential Logic Optimisations](#day3---combinational-and-sequential-logic-optimisations)
 ## Day0 - Installation of the required tools  
 <details>
  <summary>
@@ -247,7 +247,7 @@ Given below is the output of the synthesizer for the same -
 ![mult_8](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mult_8.png)
 </details>
  
-## Day3 - Combinational and Sequential Logic optimisations  
+## Day3 - Combinational and Sequential Logic Optimisations  
 
  
 
