@@ -153,7 +153,7 @@ yosys> abc -liberty <path to lib file>
 yosys> show
  ```
 Below is the output of the file using hierarchical approach -  <br>
-
+![multiple_module_hier](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_modules_hier.png)
  
 		
 </details> 
