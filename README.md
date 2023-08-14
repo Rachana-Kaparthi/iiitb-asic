@@ -495,6 +495,8 @@ begin
 end
 endmodule
 ```
+**Synthesis Output**
+![counter_opt](https://github.com/Rachanaka/iiitb-asic/blob/main/images/counter_opt.v)
 **Example 2**  
 ```
 module counter_opt (input clk , input reset , output q);
@@ -510,6 +512,8 @@ begin
 end
 endmodule
 ```
+**Synthesis output**  
+![counter_opt2](https://github.com/Rachanaka/iiitb-asic/blob/main/images/counter_opt2.v)  
 
 </details>  
 </details>
