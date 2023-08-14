@@ -133,10 +133,11 @@ sky130_fd_sc_hd__and2_4  <br>
 
 ![and_module_comparison](https://github.com/Rachanaka/iiitb-asic/assets/140998470/a6bdacfc-cbdc-4f2a-a6b7-6e76db83b6db)  
 
-
-
  </details>
- 
+<details>
+	<summary>Hierarchical and Flat Synthesis</summary>
+		
+</details> 
  
  ## Day3 - ABC  
  
