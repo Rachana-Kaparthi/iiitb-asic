@@ -172,9 +172,19 @@ So, it can be clearly seen that, the command 'flatten' in Yosys will traverse th
 
 Below is the difference between the generated netlists in both the the cases -
 ![multiple_module_hier_vs_flat](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_module_heir_vs_flat.png)  
-
 		
 </details> 
+<details>
+	<summary>Various Flop coding styles and Optimizations</summary>  
+	
+**Need for Flops**  
+In combinational circuits, output of the circuit changes based on the inputs given and during this process there might be unnecessary changes in the output which are called glitches due the propagation delays of the circuit components. To avoid these glitches in combinational circuit,we add flops so that glitches do not pass on to the next combinational block. Basically, flops shield glitches from entering into the next combinational logic block. These flops are to be initialized using reset/set inputs.  
+There are 2 types of reset/set inputs -  
+1. Asynchronous
+2. Synchronous
+
+	
+</details>
  
  ## Day3 - ABC  
  
