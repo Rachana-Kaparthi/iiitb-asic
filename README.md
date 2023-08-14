@@ -188,7 +188,8 @@ There are 2 types of reset/set inputs -
    -Synchronous set - Output of the flop goes high when set goes high and clock signal crosses positive edge.
    -synchronous reset - Output of the flop goes low when reset goes high and clock signal crosses positive edge.
    
-   I have synthesized D-flipflop using aynchronous set/reset and Synchronous set/reset inputs using Yosys, ouputs of which are given below -
+I have synthesized D-flipflop using aynchronous set/reset and Synchronous set/reset inputs using Yosys, ouputs of which are given below -
+   
 **Asynchronous Set**
 ![async_set](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_set.png)
 ![async_set_yosys](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_set_yosys.png)
