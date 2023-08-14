@@ -281,9 +281,8 @@ Upon simplication it turns out to be y=ac+a'c' which can be implemented just by 
 In sequential circuits, if output of a flop is always constant irrespective of the whatever inputs are given, it is called a sequential constant.  
 Consider below example-
 ![seq_const](https://github.com/Rachanaka/iiitb-asic/blob/main/images/seq_const.jpeg)  
-In this example, Q is always 0 irrespective of reset or clock inputs there by making output y= 1 always.  
-
-    
+In this example, Q is always 0 irrespective of reset or clock inputs there by making output y= 1 always. but the same example does not hold good if there is set input instead of reset input as Q then can receive either 0 or 1 based on set and clock inputs and is not constant.  
+   
 	
 </details>
  
