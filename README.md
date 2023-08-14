@@ -252,7 +252,7 @@ Given below is the output of the synthesizer for the same -
 	<summary>Introduction to combinational and sequential circuits</summary>  
 	
 In digital logic, we know that there are 2 types of logics, Combinational logic and Sequential logic. Whatever logic we might be using, optimisation of the logic plays an important role in minimizing the area as well as saving the power. So, in this session we are gonna discuss about some optimisation techniques both in combinational logic and sequential logic.  
-
+<details>
 ### Combinational logic optimisation techniques-  
 1.Constant propagation optimisation  
       - Direct optimisation  
@@ -333,6 +333,7 @@ Since the above code contains multiple modules, we should be using flatten comma
 Output of the synthesis:  
 ![multiple_modules_opt](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_modules_opt.png)  
 This code should ideally realize two and gates and an or gate for logic y, but instead it has turned out to be a single and gate and single or gate due to optimising the logic.
+</details>  
 
 ### Sequential logic optimisation techniques-  
 1.Basic  
