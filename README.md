@@ -477,7 +477,39 @@ endmodule
 <summary>  
 	
 ### Sequential logic optimisation for unused outputs-  
-</summary>
+</summary>  
+While synthesizing the code, by default the synthesizer optimises all the intermediate outputs that do not have a role in producing the primary output of the module thereby reducing the logic. Consider below two example for better understanding:  
+
+**Example 1**  
+```
+module counter_opt (input clk , input reset , output q);
+reg [2:0] count;
+assign q = count[0];
+
+always @(posedge clk ,posedge reset)
+begin
+	if(reset)
+		count <= 3'b000;
+	else
+		count <= count + 1;
+end
+endmodule
+```
+**Example 2**  
+```
+module counter_opt (input clk , input reset , output q);
+reg [2:0] count;
+assign q = (count[2:0] == 3'b100);
+
+always @(posedge clk ,posedge reset)
+begin
+	if(reset)
+		count <= 3'b000;
+	else
+		count <= count + 1;
+end
+endmodule
+```
 
 </details>  
 </details>
