@@ -150,11 +150,20 @@ yosys> read_liberty -lib <path to lib file>
 yosys> read_verilog <path to verilog file>
 yosys> synth -top <top_module_name>
 yosys> abc -liberty <path to lib file>
-yosys> show
+yosys> show <module name>
  ```
 Below is the output of the file using hierarchical approach -  <br>
 ![multiple_module_hier](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_modules_hier.png)
- 
+
+Now I tried using the command 'flatten' and synthesize the same file  
+ ```bash
+yosys> flatten
+yosys> synth -top <top_module_name>
+yosys> abc -liberty <path to lib file>
+yosys> show
+ ```
+Below is the difference between the generated netlists in bothe the cases -
+![multiple_module_hier_vs_flat]
 		
 </details> 
  
