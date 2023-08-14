@@ -136,6 +136,10 @@ sky130_fd_sc_hd__and2_4  <br>
  </details>
 <details>
 	<summary>Hierarchical and Flat Synthesis</summary>
+ When there are multiple modules in a program that should be synthesized, we can directly synthesize top module or synthesize each sub module seperatly. Both the processes have their own advantages. We prefer synthesizing each module seperately during the following two scenarios -  <br>
+ - when we have multiple instantiations of same submodule several times in the main module  <br>
+ - When there is a massive design, tool might not work as efficiently as required, we might have to divide and conquer by synthesizing each sub module seperately.  
+ 
 		
 </details> 
  
