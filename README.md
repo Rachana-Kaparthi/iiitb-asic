@@ -250,12 +250,11 @@ Given below is the output of the synthesizer for the same -
 ## Day3 - Combinational and Sequential Logic Optimisations  
 <details>
 	<summary>Introduction to combinational and sequential circuits</summary>  
-	
+<br>  
 In digital logic, we know that there are 2 types of logics, Combinational logic and Sequential logic. Whatever logic we might be using, optimisation of the logic plays an important role in minimizing the area as well as saving the power. So, in this session we are gonna discuss about some optimisation techniques both in combinational logic and sequential logic.  
 <details>
 <summary>  
-	
-### Combinational logic optimisation techniques- 
+	Combinational logic optimisation techniques- 
 </summary>  
 
 1.Constant propagation optimisation  
@@ -340,8 +339,7 @@ This code should ideally realize two and gates and an or gate for logic y, but i
 </details>  
 <details>  
 <summary>  
-	
-### Sequential logic optimisation techniques-  
+	Sequential logic optimisation techniques-  
 </summary>
 
 1.Basic  
@@ -475,8 +473,7 @@ endmodule
 </details>
 <details>  
 <summary>  
-	
-### Sequential logic optimisation for unused outputs-  
+	Sequential logic optimisation for unused outputs-  
 </summary>  
 While synthesizing the code, by default the synthesizer optimises all the intermediate outputs that do not have a role in producing the primary output of the module thereby reducing the logic. Consider below two example for better understanding:  
 
