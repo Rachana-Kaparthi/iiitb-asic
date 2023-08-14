@@ -136,9 +136,24 @@ sky130_fd_sc_hd__and2_4  <br>
  </details>
 <details>
 	<summary>Hierarchical and Flat Synthesis</summary>
- When there are multiple modules in a program that should be synthesized, we can directly synthesize top module or synthesize each sub module seperatly. Both the processes have their own advantages. We prefer synthesizing each module seperately during the following two scenarios -  <br>
+	<br>
+
+ When there are multiple modules in a program that should be synthesized, we can directly synthesize top module or synthesize each sub module separately. Both the processes have their own advantages. We prefer synthesizing each module seperately especially in the following two scenarios -  <br>
  - when we have multiple instantiations of same submodule several times in the main module  <br>
- - When there is a massive design, tool might not work as efficiently as required, we might have to divide and conquer by synthesizing each sub module seperately.  
+ - When there is a massive design, tool might not work as efficiently as required, we might have to divide and conquer by synthesizing each sub module seperately.  <br>
+I have sinthesized a verilog code named 'multiple_modules.v' using both hierachical and flat modelling styles.
+**Using Hierarchical model**
+In the directory of the verilog files, I used the following commands to synthesize and view the synthesized deisgn:
+	
+ ```bash
+yosys> read_liberty -lib <path to lib file>
+yosys> read_verilog <path to verilog file>
+yosys> synth -top <top_module_name>
+yosys> abc -liberty <path to lib file>
+yosys> show
+ ```
+Below is the output of the file using hierarchical approach -  <br>
+
  
 		
 </details> 
