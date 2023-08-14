@@ -1,3 +1,5 @@
+This repository summarizes the day to day progress made during the VSD Tapout program -
+
 [Day 0](#day-0)  
 [Day 1](#day-1)
 ## Day0
