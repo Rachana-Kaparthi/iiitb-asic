@@ -190,9 +190,9 @@ There are 2 types of reset/set inputs -
    
    I have synthesized D-flipflop using aynchronous set/reset and Synchronous set/reset inputs using Yosys, ouputs of which are given below -
 ![async_set](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_set.png)
-![async_reset](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_reset.png)
+![asynch_reset](https://github.com/Rachanaka/iiitb-asic/blob/main/images/asynch_reset.png)
 ![async_sync_reset](https://github.com/Rachanaka/iiitb-asic/blob/main/images/async_sync_reset.png)
-![synch_reset](https://github.com/Rachanaka/iiitb-asic/blob/main/images/Sync_reset.png)
+![Synch_reset](https://github.com/Rachanaka/iiitb-asic/blob/main/images/Synch_reset.png)
    
 
 	
