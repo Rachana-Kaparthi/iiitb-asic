@@ -3,7 +3,7 @@ This repository summarizes the day to day progress made during the VSD Tapout pr
 [Day 0 - Installation of the required tools](#day0---installation-of-the-required-tools)  
 [Day 1 - Introduction to Synthesis using Yosys](#day1---introduction-to-synthesis-using-yosys)  
 [Day 2 - Hierarchical and Flat Synthesis ](#day2---hierarchical-and-flat-synthesis)   
-[Day 3]
+[Day 3](#day3---abc)
 ## Day0 - Installation of the required tools  
 <details>
  <summary>
@@ -110,8 +110,17 @@ yosys> show
  </details>  
 
  ## Day2 - Hierarchical and Flat Synthesis  
+ <details>
+ <summary>
+Introduction to library files
+ </summary>
+This section explains more about the library file that we are particularly using in this program i.e. "sky130_fd_sc_hd__tt_025C_1v80.lib".
+There are 3 parameters that we have concentrated while naming the library file which are process, voltage and temperature.
+Here is the format of the library naming convention - sky130_fd_sc_hd__<process_variation>_<temperature_variation>_<voltage_variation>
+ </details>
  
- ## Day3 - ABC
+ 
+ ## Day3 - ABC  
  
 
  
