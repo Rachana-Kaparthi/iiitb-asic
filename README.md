@@ -240,8 +240,9 @@ Given below is the output of the synthesizer for the same -
 ![mult_2](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mult_2.png)  
 
 **Multiplication by 9**  
-Let input be a and output br y = a*9,
-If a = 0101, then y = a*9 = (a*8)+(a*1) = (a<<3)+(a). If a is a 3 digit bit then y becomes aa(here 101101) i.e. a is left shifted 3 times and a is added in the place of shifted bit at lsb.  
+Let input be a and output br y = a*9,  
+If a = 0101, then y = a*9 = (a*8)+(a*1) = (a<<3)+(a).  
+If a is a 3 digit bit then y becomes aa(here 101101) i.e. a is left shifted 3 times and a is added in the place of shifted bit at lsb.  
 Given below is the output of the synthesizer for the same -  
 ![mult_8](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mult_8.png)
 </details>
