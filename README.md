@@ -223,8 +223,13 @@ dfflibmap -liberty <path to flop lib file>
 ```
 
 </details>
+
+<details>
+	<summary>Optimization</summary>
+	
+</details>
  
- ## Day3 - ABC  
+## Day3 - ABC  
  
 
  
