@@ -271,12 +271,16 @@ Consider a statement where it states as below
 assign *y=a?(b?c:(c?a:0)):(!c)*  
 Upon simplication it turns out to be y=ac+a'c' which can be implemented just by nand gate instead of three 2:1 multiplexers by optimising the logic.  
 ### Sequential logic optimisation techniques-  
-1.Basic
- 	   - Sequential constant propagation
+1.Basic  
+ 	   - Sequential constant propagation  
 2.Advanced  
-	   - State optimisation
-    	   - Retiming
-	   - Sequential logic colning (Floor plan aware synthesis)  
+	   - State optimisation  
+    	   - Retiming <br>
+	   - Sequential logic colning (Floor plan aware synthesis)  <br>  
+**Sequential Costant**
+In sequential circuits, if output of a flop is always constant irrespective of the whatever inputs are given, it is called a sequential constant.  
+Consider below example-
+![seq_const](https://github.com/Rachanaka/iiitb-asic/blob/main/images/seq_const.jpeg)
     
 	
 </details>
