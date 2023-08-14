@@ -328,9 +328,11 @@ yosys> opt_clean -purge
 yosys> abc -liberty <path to lib file>
 yosys> show
  ```
+Since the above code contains multiple modules, we should be using flatten command in order to optimise the combinational logic.  
+
 Output of the synthesis:  
 ![multiple_modules_opt](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_modules_opt.png)  
-Since the above code contains multiple modules, we should be using flatten command in order to optimise the combinational logic.  
+This code should ideally realize 2 and gates and an or gate for logic y, but instead it has turned out to be a single and and single or gate due to optimising the logic.
 
 ### Sequential logic optimisation techniques-  
 1.Basic  
