@@ -253,10 +253,10 @@ Given below is the output of the synthesizer for the same -
 	
 In digital logic, we know that there are 2 types of logics, Combinational logic and Sequential logic. Whatever logic we might be using, optimisation of the logic plays an important role in minimizing the area as well as saving the power. So, in this session we are gonna discuss about some optimisation techniques both in combinational logic and sequential logic.  
 
-### Combinational logic optimisation techniques -  
-        1.Constant propagation optimisation 
-             - Direct optimisation  
-	2.Boolean logic optimisation  
+### Combinational logic optimisation techniques-  
+1.Constant propagation optimisation  
+      - Direct optimisation  
+2.Boolean logic optimisation  
 	     - K Map  
   	     - Quine Mckluskey algorithms  
 	
@@ -270,10 +270,10 @@ So from implementing Y logic using and, or gates, if A = 0 logic would be optimi
 Consider a statement where it states as below  
 assign *y=a?(b?c:(c?a:0)):(!c)*  
 Upon simplication it turns out to be y=ac+a'c' which can be implemented just by nand gate instead of three 2:1 multiplexers by optimising the logic.  
-### Sequential logic optimisation techniques -  
-	1.Basic
+### Sequential logic optimisation techniques-  
+1.Basic
  	   - Sequential constant propagation
-        2.Advanced  
+2.Advanced  
 	   - State optimisation
     	   - Retiming
 	   - Sequential logic colning (Floor plan aware synthesis)  
