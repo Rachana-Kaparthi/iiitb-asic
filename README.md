@@ -226,8 +226,18 @@ dfflibmap -liberty <path to flop lib file>
 </details>
 
 <details>
-	<summary>Optimization</summary>
-	
+	<summary>Optimizations</summary>  
+Here, I have synthesized multiplier by 2 and multiplier by 9 circuits without any use of the gates. This was possible because multiplying by 2 in binary only meant shifting of the digits to left by single digit and appending 0 at the lsb. Also, by keen observation it can be found that multiplying by 9 means shifting the bits to left 3 times and appending the number at the lsb bits. Consider the below example :  
+
+**Multiplication by 2**
+Let input be a and output be y,  
+If a = 0101, the y = 1010 i.e y = a<<2  
+This can be achieved by mere connection of wires from input to output without any use of gates. Infact, linking the library file is also not required in such cases.  
+Below are the messages received when trying to link the library -
+![Screenshot](https://github.com/Rachanaka/iiitb-asic/assets/140998470/43eaea40-ffda-44a0-b042-676b1d889cd9)
+
+Given below is the output of the synthesizer for the same -  
+
 </details>
  
 ## Day3 - ABC  
