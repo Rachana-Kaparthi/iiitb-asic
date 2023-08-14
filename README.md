@@ -279,7 +279,6 @@ Below is the code present in a file named opt_check:
 module opt_check (input a , input b , output y);
 	assign y = a?b:0;
 endmodule
-
 ```
 The above code is synthesized in yosys using following commands-  
 ```bash
@@ -290,6 +289,47 @@ yosys> opt_clean -purge
 yosys> abc -liberty <path to lib file>
 yosys> show
  ```
+Output of the synthesis:  
+![opt_check](https://github.com/Rachanaka/iiitb-asic/blob/main/images/opt_check.png)  
+
+Ideally, the code should realize a multiplexer but an and gate is shown instead of a multiplexer because of the command opt_clean that we gave during synthesis. opt_clean -purge cleans up all the unused cells and wires there by giving us an optimised logic.  
+Example 2:  
+Below is the code present in a file named multiple_modules_opt:  
+```
+module sub_module1(input a , input b , output y);
+ assign y = a & b;
+endmodule
+
+
+module sub_module2(input a , input b , output y);
+ assign y = a^b;
+endmodule
+
+
+module multiple_module_opt(input a , input b , input c , input d , output y);
+wire n1,n2,n3;
+
+sub_module1 U1 (.a(a) , .b(1'b1) , .y(n1));
+sub_module2 U2 (.a(n1), .b(1'b0) , .y(n2));
+sub_module2 U3 (.a(b), .b(d) , .y(n3));
+
+assign y = c | (b & n1); 
+
+endmodule
+
+```
+The above code is synthesized in yosys using following commands-  
+```bash
+yosys> read_liberty -lib <path to lib file>
+yosys> read_verilog <path to verilog file>
+yosys> synth -top <top_module_name>
+yosys> flatten
+yosys> opt_clean -purge
+yosys> abc -liberty <path to lib file>
+yosys> show
+ ```
+Output of the synthesis:  
+![multiple_modules_opt](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_modules_opt.png)
 ### Sequential logic optimisation techniques-  
 1.Basic  
  	   - Sequential constant propagation  
