@@ -1,7 +1,7 @@
 This repository summarizes the day to day progress made during the VSD Tapout program -
 
 [Day 0 - Installation of the required tools](https://github.com/Rachanaka/iiitb-asic/blob/main/README.md#day0---installation-of-the-required-tools)  
-[Day1 - Introduction to Synthesis using Yosys](https://github.com/Rachanaka/iiitb-asic/blob/main/README.md#day1---introduction-to-synthesis-using-yosys)  
+[Day 1 - Introduction to Synthesis using Yosys](https://github.com/Rachanaka/iiitb-asic/blob/main/README.md#day1---introduction-to-synthesis-using-yosys)  
 [Day 2](#day-2)  
 [Day 3](#day-3)
 ## Day0 - Installation of the required tools  
@@ -108,6 +108,8 @@ yosys> show
  Below is the screenshot of the generated netlist:  
  ![Screenshot-2](https://github.com/Rachanaka/iiitb-asic/assets/140998470/871e9051-4cc0-40b3-845e-35f6eab87caf)  
  </details>  
+
+ ## Day2 - Hierarchical and Flat Synthesis   
 
  
  
