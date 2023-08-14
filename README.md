@@ -124,8 +124,8 @@ Process variation talks about the variations encountered during the fabrication 
 	 - fast  <br>
 	 - typical  <br>
 Typical operating conditions used in the library are -  
-``` bash
-
+(https://github.com/Rachanaka/iiitb-asic/blob/main/images/operating_conditions.png)
+	 
  </details>
  
  
