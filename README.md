@@ -472,10 +472,16 @@ endmodule
 **Synthesis output**  
 ![dff_const5_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/dff_const5_synthesis.png)  
 
-
-</details>	
 </details>
- 
+<details>  
+<summary>  
+	
+### Sequential logic optimisation for unused outputs-  
+</summary>
+
+</details>  
+</details>
+
  
  
 	
