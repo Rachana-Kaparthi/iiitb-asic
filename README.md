@@ -237,7 +237,7 @@ Below are the messages received when trying to link the library -
 ![Screenshot](https://github.com/Rachanaka/iiitb-asic/assets/140998470/43eaea40-ffda-44a0-b042-676b1d889cd9)
 
 Given below is the output of the synthesizer for the same -  
-
+![mult_2](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mult_2.png)
 </details>
  
 ## Day3 - ABC  
