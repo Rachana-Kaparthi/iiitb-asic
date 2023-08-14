@@ -1,7 +1,7 @@
 This repository summarizes the day to day progress made during the VSD Tapout program -
 
 [Day 0 - Installation of the required tools](https://github.com/Rachanaka/iiitb-asic/blob/main/README.md#day0---installation-of-the-required-tools)  
-[Day 1](#day-1)  
+[Day1 - Introduction to Synthesis using Yosys](https://github.com/Rachanaka/iiitb-asic/blob/main/README.md#day1---introduction-to-synthesis-using-yosys)  
 [Day 2](#day-2)  
 [Day 3](#day-3)
 ## Day0 - Installation of the required tools  
@@ -54,7 +54,7 @@ Below is the screenshot of successful installation:
 
 </details>  
 
-## Day1 - Instroduction to Synthesis using Yosys   
+## Day1 - Introduction to Synthesis using Yosys   
 
 <details>
  <summary> Summary </summary>
