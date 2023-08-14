@@ -475,7 +475,7 @@ endmodule
 <summary>  
 	Sequential logic optimisation for unused outputs-  
 </summary>  
-While synthesizing the code, by default the synthesizer optimises all the intermediate outputs that do not have a role in producing the primary output of the module thereby reducing the logic. Consider below two example for better understanding:  
+While synthesizing the code, by default the yosys synthesizer optimises all the intermediate outputs that do not have a role in producing the primary output of the module, thereby reducing the logic. Consider below two examples for better understanding:  
 
 **Example 1**  
 ```
@@ -511,6 +511,8 @@ endmodule
 ```
 **Synthesis output**  
 ![counter_opt2](https://github.com/Rachanaka/iiitb-asic/blob/main/images/counter_opt2.v)  
+<br>  
+Both the examples above implements the same 3 bit counter but synthesizer implemented example 1 using only one dff whereas it implemented example 2 using three dffs. This is because the primary output in example 1 depends only on the LSB of the count, hence the other 2 bits of the count are optimised by the synthesizer. But this is not the case in example 2, output in example 2 depends on all the 3 bits of the counter, hence counter is implemented making use of 3 flipflops.  
 
 </details>  
 </details>
