@@ -216,7 +216,7 @@ yosys> synth -top <top_module_name>
 yosys> abc -liberty <path to lib file>
 yosys> show
  ```
-General practice is to maintain a separate library file for standard cells and a separate library file for flop design, so we need to explicitely tell the design from where to pick D flipflop. Hence we use the command  
+General practice is to maintain a separate library file for standard cells and a separate library file for flop design, so we need to explicitely tell the design from where to pick D flipflop. Hence we use the command -  
 
 ```
 dfflibmap -liberty <path to flop lib file>
