@@ -119,10 +119,13 @@ Introduction to library files
 Here is the format of the library naming convention -   
 sky130_fd_sc_hd__&lt;process_variation>_&lt;temperature_variation>_&lt;voltage_variation>  <br>
 <br>
-Process variation talks about the variations encountered during the fabrication process. Process variation includes any one of the following -  
-	 - slow  
-	 - fast  
-	 - typical  
+Process variation talks about the variations encountered during the fabrication process. Process variation may include any one of the following values -  <br>
+	 - slow  <br>
+	 - fast  <br>
+	 - typical  <br>
+Typical operating conditions used in the library are -  
+``` bash
+
  </details>
  
  
