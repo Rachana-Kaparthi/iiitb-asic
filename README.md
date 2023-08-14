@@ -230,15 +230,20 @@ dfflibmap -liberty <path to flop lib file>
 Here, I have synthesized multiplier by 2 and multiplier by 9 circuits without any use of the gates. This was possible because multiplying by 2 in binary only meant shifting of the digits to left by single digit and appending 0 at the lsb. Also, by keen observation it can be found that multiplying by 9 means shifting the bits to left 3 times and appending the number at the lsb bits. Consider the below example :  
 	
 **Multiplication by 2**  
-	
-Let input be a and output be y = a*2,  
-If a = 0101, then y = 1010 i.e y = a<<2  
+	Let input be a and output be y = a*2,  
+If a = 0101, then y = 1010 i.e y = a<<1  
 This can be achieved by mere connection of wires from input to output without any use of gates. Infact, linking the library file is also not required in such cases.  
 Below are the messages received when trying to link the library -
 ![Screenshot](https://github.com/Rachanaka/iiitb-asic/assets/140998470/43eaea40-ffda-44a0-b042-676b1d889cd9)
 
 Given below is the output of the synthesizer for the same -  
-![mult_2](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mult_2.png)
+![mult_2](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mult_2.png)  
+
+**Multiplication by 9**  
+Let input be a and output br y = a*9,
+If a = 0101, then y = a*9 = (a*8)+(a*1) = (a<<3)+(a). If a is a 3 digit bit then y becomes aa(here 101101) i.e. a is left shifted 3 times and a is added in the place of shifted bit at lsb.  
+Given below is the output of the synthesizer for the same -  
+![mult_8](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mult_8.png)
 </details>
  
 ## Day3 - ABC  
