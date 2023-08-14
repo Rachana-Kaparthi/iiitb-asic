@@ -329,7 +329,9 @@ yosys> abc -liberty <path to lib file>
 yosys> show
  ```
 Output of the synthesis:  
-![multiple_modules_opt](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_modules_opt.png)
+![multiple_modules_opt](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_modules_opt.png)  
+Since the above code contains multiple modules, we should be using flatten command in order to optimise the combinational logic.  
+
 ### Sequential logic optimisation techniques-  
 1.Basic  
  	   - Sequential constant propagation  
