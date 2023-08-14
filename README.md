@@ -124,9 +124,10 @@ Process variation talks about the variations encountered during the fabrication 
 	 - fast  <br>
 	 - typical  <br>
 Typical operating conditions used in the library are -  
-![External Image](./images/operating_conditions.png)  
-We can also find multiple cells with the definition of same and gate but variation in spa
-	 
+https://github.com/Rachanaka/iiitb-asic/blob/main/images/operating_conditions.png 
+We can also find multiple cells with the definition of same 'and' gate but with variation in the area of the gates. This simple means that the cells with larger area are employing wider transistors. Below is the image of 3 different 'and' gates -
+
+
  </details>
  
  
