@@ -167,7 +167,7 @@ yosys> abc -liberty <path to lib file>
 yosys> show
  ```
 Below is the output of the file using Flat approach -  <br>
-![multiple_module_flat]
+![multiple_module_flat](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_module_flat.png)
 Below is the difference between the generated netlists in both the the cases -
 ![multiple_module_hier_vs_flat](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_module_heir_vs_flat.png)  
 
