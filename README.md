@@ -338,8 +338,12 @@ Output of the synthesis:
 ![multiple_modules_opt](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_modules_opt.png)  
 This code should ideally realize two and gates and an or gate for logic y, but instead it has turned out to be a single and gate and single or gate due to optimising the logic.
 </details>  
-
+<details>  
+<summary>  
+	
 ### Sequential logic optimisation techniques-  
+</summary>
+
 1.Basic  
  	   - Sequential constant propagation  
 2.Advanced  
@@ -352,7 +356,7 @@ Consider below example-
 ![seq_const](https://github.com/Rachanaka/iiitb-asic/blob/main/images/seq_const.jpeg)  
 In this example, Q is always 0 irrespective of reset or clock inputs there by making output y= 1 always. but the same example does not hold good if there is set input instead of reset input as Q then can receive either 0 or 1 based on set and clock inputs and is not constant.  
    
-	
+</details>	
 </details>
  
  
