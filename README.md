@@ -259,7 +259,7 @@ Combinational logic optimisation techniques -
 	2.Boolean logic optimisation  
 	     - K Map  
   	     - Quine Mckluskey algorithms  
-**Constant Propagation**
+**Constant Propagation**  
 Let us take an example to discuss about this:  
 Consider Y=(AB+C)'  
 If A = 0 then Y = C'  
