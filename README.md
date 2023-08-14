@@ -205,7 +205,23 @@ In this case, we have given both synchronous and asynchronous resets. Synchronou
 **Synchronous reset**
 ![Synch_reset](https://github.com/Rachanaka/iiitb-asic/blob/main/images/Synch_reset.png)
 ![sync_reset_yosys](https://github.com/Rachanaka/iiitb-asic/blob/main/images/sync_reset_yosys.png)  
-   
+
+Yosys Commands used for synthesis are :
+	
+ ```bash
+yosys> read_liberty -lib <path to lib file>
+yosys> read_verilog <path to verilog file>
+yosys> dfflibmap -liberty <path to flop lib file>
+yosys> synth -top <top_module_name>
+yosys> abc -liberty <path to lib file>
+yosys> show
+ ```
+General practice is to maintain a separate library file for standard cells and a separate library file for flop design, so we need to explicitely tell the design from where to pick D flipflop. Hence we use the command  
+
+```
+dfflibmap -liberty <path to flop lib file>
+```
+
 </details>
  
  ## Day3 - ABC  
