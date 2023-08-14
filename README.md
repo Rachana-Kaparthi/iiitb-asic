@@ -277,7 +277,7 @@ Upon simplication it turns out to be y=ac+a'c' which can be implemented just by 
 
 Realizing combinational circuit optimization using some examples in the lab- 
 
-Example 1:  
+**Example 1:**  
 Below is the code present in a file named opt_check:  
 ```
 module opt_check (input a , input b , output y);
@@ -297,7 +297,7 @@ Output of the synthesis:
 ![opt_check](https://github.com/Rachanaka/iiitb-asic/blob/main/images/opt_check.png)  
 
 Ideally, the code should realize a multiplexer but an and gate is shown instead of a multiplexer because of the command opt_clean that we gave during synthesis. opt_clean -purge cleans up all the unused cells and wires there by giving us an optimised logic.  
-Example 2:  
+**Example 2:**  
 Below is the code present in a file named multiple_modules_opt:  
 ```
 module sub_module1(input a , input b , output y);
@@ -354,8 +354,22 @@ This code should ideally realize two and gates and an or gate for logic y, but i
 In sequential circuits, if output of a flop is always constant irrespective of the whatever inputs are given, it is called a sequential constant.  
 Consider below example-
 ![seq_const](https://github.com/Rachanaka/iiitb-asic/blob/main/images/seq_const.jpeg)  
-In this example, Q is always 0 irrespective of reset or clock inputs there by making output y= 1 always. but the same example does not hold good if there is set input instead of reset input as Q then can receive either 0 or 1 based on set and clock inputs and is not constant.  
-   
+In this example, Q is always 0 irrespective of reset or clock inputs there by making output y= 1 always. but the same example does not hold good if there is set input instead of reset input as Q then can receive either 0 or 1 based on set and clock inputs and is not constant. 
+
+Trying to realize the above logic using some examples in the lab:  
+**Example 1**  
+Below is the code present in a file named dff_const1.v:  
+```
+module dff_const1(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b0;
+	else
+		q <= 1'b1;
+end
+endmodule
+```
 </details>	
 </details>
  
