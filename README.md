@@ -141,8 +141,10 @@ sky130_fd_sc_hd__and2_4  <br>
  When there are multiple modules in a program that should be synthesized, we can directly synthesize top module or synthesize each sub module separately. Both the processes have their own advantages. We prefer synthesizing each module seperately especially in the following two scenarios -  <br>
  - when we have multiple instantiations of same submodule several times in the main module  <br>
  - When there is a massive design, tool might not work as efficiently as required, we might have to divide and conquer by synthesizing each sub module seperately.  <br>
-I have sinthesized a verilog code named 'multiple_modules.v' using both hierachical and flat modelling styles.
-**Using Hierarchical model**
+I have synthesized a verilog code named 'multiple_modules.v' using both hierachical and flat modelling styles.
+
+**Using Hierarchical model**  
+
 In the directory of the verilog files, I used the following commands to synthesize and view the synthesized deisgn:
 	
  ```bash
@@ -155,6 +157,8 @@ yosys> show <module name>
 Below is the output of the file using hierarchical approach -  <br>
 ![multiple_module_hier](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_modules_hier.png)
 
+**Using Flat model**  
+
 Now I tried using the command 'flatten' and synthesize the same file  
  ```bash
 yosys> flatten
@@ -162,8 +166,12 @@ yosys> synth -top <top_module_name>
 yosys> abc -liberty <path to lib file>
 yosys> show
  ```
+Below is the output of the file using Flat approach -  <br>
+![multiple_module_flat]
 Below is the difference between the generated netlists in both the the cases -
-![multiple_module_hier_vs_flat](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_module_heir_vs_flat.png)
+![multiple_module_hier_vs_flat](https://github.com/Rachanaka/iiitb-asic/blob/main/images/multiple_module_heir_vs_flat.png)  
+
+From the 
 		
 </details> 
  
