@@ -181,7 +181,13 @@ Below is the difference between the generated netlists in both the the cases -
 In combinational circuits, output of the circuit changes based on the inputs given and during this process there might be unnecessary changes in the output which are called glitches due the propagation delays of the circuit components. To avoid these glitches in combinational circuit,we add flops so that glitches do not pass on to the next combinational block. Basically, flops shield glitches from entering into the next combinational logic block. These flops are to be initialized using reset/set inputs.  
 There are 2 types of reset/set inputs -  
 1. Asynchronous
+   -Asynchronous set - Output of the flop goes high as soon as set is high inspite of the clock signal not being at the positive edge.
+   -Asynchronous reset - Output of the flop goes low as soon as reset is high inspite of the clock signal not being at the positive edge.
 2. Synchronous
+   -Synchronous set - Output of the flop goes high only when clock signal goes high.
+   -synchronous reset
+   I have synthesized D-flipflop using aynchronous set/reset and Synchronous set/reset inputs using Yosys and ouputs of which are given below -
+   
 
 	
 </details>
