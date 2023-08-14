@@ -114,9 +114,13 @@ yosys> show
  <summary>
 Introduction to library files
  </summary>
-This section explains more about the library file that we are particularly using in this program i.e. "sky130_fd_sc_hd__tt_025C_1v80.lib".
+This section explains more about the library file that we are particularly using in this program i.e. "sky130_fd_sc_hd__tt_025C_1v80.lib".  
 There are 3 parameters that we have concentrated while naming the library file which are process, voltage and temperature.
-Here is the format of the library naming convention - sky130_fd_sc_hd__<process_variation>_<temperature_variation>_<voltage_variation>
+Here is the format of the library naming convention - sky130_fd_sc_hd__&lt;process_variation>_&lt;temperature_variation>_&lt;voltage_variation>  
+Process variation talks about the variations encountoured during the fabrication process. Process variation includes any one of the following -  
+	 - slow  
+	 - fast  
+	 - typical  
  </details>
  
  
