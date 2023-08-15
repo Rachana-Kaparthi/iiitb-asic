@@ -697,7 +697,7 @@ We can clearly see that both the simulation and synthesis outputs do not match, 
 	Even in case construct there can be inferred latches due to incomplete case statements and partial assignments in case statements.  
 </details>  
 <details>
-	<summary>Labs on Incomplete If statements</summary>  
+	<summary>Lab: Incomplete If statements</summary>  
 	
 **Example 1**  
 Below is the content of the file imcomp_if.v  
@@ -737,8 +737,11 @@ endmodule
 
 It can be clearly seen that we are expecting a 2:1 mux structure and we got a latch as output due to incomplete if statement.  
 
+</details>  
+<details>
+	<summary>Lab: Incomplete Case statements</summary>  
+
 </details>
- 
  
 	
 
