@@ -257,11 +257,11 @@ In digital logic, we know that there are 2 types of logics, Combinational logic 
 <details>
 <summary>Combinational logic optimisation techniques </summary>  
 <br>  
-1.Constant propagation optimisation  
-      - Direct optimisation  
-2.Boolean logic optimisation  
-	     - K Map  
-  	     - Quine Mckluskey algorithms  
+1.Constant propagation optimisation <br>  
+	     - Direct optimisation  <br>
+2.Boolean logic optimisation <br> 
+	     - K Map  <br>
+  	     - Quine Mckluskey algorithms <br> 
 	
 **Constant Propagation Optimisation**  
 Let us take an example to discuss about this:  
