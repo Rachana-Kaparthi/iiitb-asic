@@ -526,9 +526,9 @@ Both the examples above implements the same 3 bit counter but synthesizer implem
 <br>  
 	This session answers about what and why is GLS used. To verify our RTL logic we simulate it under testbench and after synthesis we get a netlist which is usually same as RTL logic. But we should also ensure whether the generated netlist is also working as per the requirements. So, GLS is used to verify the logical correctness of the design after synthesis and also it ensures that the timing of the design is met when run with delay annotation.  <br>
 There might be several reasons why netlist does not match with the RTL logic i.e. synthesis and simulation mismatch may occur due to following reasons: <br> 
-	&nbsp;1.Missing sensitivity list  <br>
-	&nbsp;2.Blocking vs Non blocking assignments  <br>
-	&nbsp;3.Non standard verilog coding  <br>
+	1.Missing sensitivity list  <br>
+	2.Blocking vs Non blocking assignments  <br>
+	3.Non standard verilog coding  <br>
 	
 </details>
 
