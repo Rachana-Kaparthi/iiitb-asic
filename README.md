@@ -529,9 +529,11 @@ There might be several reasons why netlist does not match with the RTL logic i.e
         1.Missing sensitivity list  <br>
 	2.Blocking vs Non blocking assignments  <br>
 	3.Non standard verilog coding  <br>  
-Workflow of GLS is similar to that of verilog simulation but instead of RTL logic as input we provide gate levellogic as input-  
 	
-![gls_using_iverilog](https://github.com/Rachanaka/iiitb-asic/blob/main/images/GLS%20using%20iverilog.png)
+Workflow of GLS is similar to that of verilog simulation but instead of RTL logic as input we provide gate levellogic as input -  
+	
+![gls_using_iverilog](https://github.com/Rachanaka/iiitb-asic/blob/main/images/GLS%20using%20iverilog.png)  
+
 	
 </details>
 
