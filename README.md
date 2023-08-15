@@ -583,7 +583,7 @@ endmodule
 I have then simulated the generated netlist in iverilog using the below commands:  
 ```
 > iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v <netlist file> <testbench file>
-> ./a/out
+> ./a.out
 > gtkwave <generated vcd file>
 ```
 **Simulation Output**  
