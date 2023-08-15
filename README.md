@@ -587,7 +587,26 @@ I have then simulated the generated netlist in iverilog using the below commands
 > gtkwave <generated vcd file>
 ```
 **Simulation Output**  
-![ternary_mux](https://github.com/Rachanaka/iiitb-asic/blob/main/images/ternary_mux_gtk.png)
+![ternary_mux](https://github.com/Rachanaka/iiitb-asic/blob/main/images/ternary_mux_gtk.png)  
+**Example 2**  
+Below is the content of the file named bad_mux.v  
+```
+module bad_mux (input i0 , input i1 , input sel , output reg y);
+always @ (sel)
+begin
+	if(sel)
+		y <= i1;
+	else 
+		y <= i0;
+end
+endmodule
+```
+**Simulation output:**  
+![bad_mux_simulation_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_simulation_output.png)  
+**Synthesis Output**  
+![bad_mux_synthesis_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_synthesis_output.png)  
+
+
 </details>
 
  
