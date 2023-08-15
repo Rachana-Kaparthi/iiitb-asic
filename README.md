@@ -712,6 +712,8 @@ endmodule
 ```
 **Simulation output**  
 ![incomp_if_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if_simulation.png)  
+**Synthesis output**  
+![incomp_if_scematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if_scematic.png)  
 
 </details>
  
