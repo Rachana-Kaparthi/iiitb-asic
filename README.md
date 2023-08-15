@@ -342,10 +342,10 @@ This code should ideally realize two and gates and an or gate for logic y, but i
 	Sequential logic optimisation techniques  
 </summary>
 <br>  
-1.Basic  
- 	   - Sequential constant propagation  
-2.Advanced  
-	   - State optimisation  
+1.Basic <br> 
+ 	   - Sequential constant propagation <br> 
+2.Advanced  <br>
+	   - State optimisation <br> 
     	   - Retiming <br>
 	   - Sequential logic colning (Floor plan aware synthesis)  <br>  
 **Sequential Costant**
