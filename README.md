@@ -851,6 +851,11 @@ end
 end
 endmodule
 ```
+**Simulation output**  
+![mux_generate_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mux_generate_simulation.png)  
+**Synthesis output**  
+![mux_generate_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mux_generate_schematic.png)  
+
 
 
 </details>
