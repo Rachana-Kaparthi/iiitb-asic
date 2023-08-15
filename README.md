@@ -714,6 +714,9 @@ endmodule
 ![incomp_if_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if_simulation.png)  
 **Synthesis output**  
 ![incomp_if_scematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if_scematic.png)  
+It can be clearly seen that we are expecting a mux structure and we got a latch as output due to incomplete if statement.  
+
+**Example 2**  
 
 </details>
  
