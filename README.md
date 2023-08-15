@@ -537,6 +537,8 @@ Workflow of GLS is similar to that of verilog simulation but instead of RTL logi
 
 <details>
 <summary>Labs on GLS</summary>  
+	
+**Example 1**  
 Below is the content of the file named ternary_operator_mux.v  
 	
 ```
@@ -545,7 +547,7 @@ assign y = sel?i1:i0;
 endmodule
 ```  
 **Synthesis output:**  
-![ternary_operator_mux](https://github.com/Rachanaka/iiitb-asic/blob/main/images/ternary_mux_schematic.png)
+![ternary_operator_mux](https://github.com/Rachanaka/iiitb-asic/blob/main/images/ternary_mux_schematic.png)  
 **Netlist file**  
 ```
 module ternary_operator_mux(i0, i1, sel, y);
