@@ -757,7 +757,8 @@ endmodule
 **Simulation output**  
 ![incomp_case_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_case_simulation.png)  
 **Synthesis output**  
-![incomp_case_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_case_schematic.png)
+![incomp_case_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_case_schematic.png)  
+So, in this example it can be seen that for select=10 or 11, output infers a latch due to incomplete case statement.  
 
 </details>
  
