@@ -834,7 +834,7 @@ We can see that the error we have created when sel=11 is taken by synthesizer.
 <details>
 	<summary>Looping Constructs</summary>  
 	
-There are two types of *for* loops - *for loop* and *generate for loop*. *for loop* is used for evaluating repetative expressions whereas *generating for loop* is used for instantiating hardware.
+There are two types of *for* loops - *for loop* and *for generate*. *for loop* is used for evaluating repetative expressions whereas *for generate* is used for instantiating hardware. Also, *for loop* is written inside always block but *for generate* is written outside always block.
 
 </details>
  
