@@ -713,10 +713,31 @@ endmodule
 **Simulation output**  
 ![incomp_if_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if_simulation.png)  
 **Synthesis output**  
-![incomp_if_scematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if_scematic.png)  
-It can be clearly seen that we are expecting a mux structure and we got a latch as output due to incomplete if statement.  
+![incomp_if_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if_scematic.png)  
+It can be clearly seen that synthesizer has inferred a latch due to absence of else statement.
 
 **Example 2**  
+Below is the content of the file imcomp_if2.v  
+```
+module incomp_if2 (input i0 , input i1 , input i2 , input i3, output reg y);
+always @ (*)
+begin
+	if(i0)
+		y <= i1;
+	else if (i2)
+		y <= i3;
+
+end
+endmodule
+```
+**Simulation output**  
+![incomp_if2_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if2_simulation.png)  
+**Synthesis output**  
+![incomp_if2_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if2_schematic.png)
+
+
+
+It can be clearly seen that we are expecting a mux structure and we got a latch as output due to incomplete if statement.  
 
 </details>
  
