@@ -691,7 +691,9 @@ We can clearly see that both the simulation and synthesis outputs do not match, 
 </details> 
 
 ## Day5 - If,Case,For Loop and For generate  
-
+<details>
+<summary>If case</summary>	
+</details>
  
  
 	
