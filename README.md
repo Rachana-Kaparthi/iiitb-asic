@@ -518,6 +518,12 @@ Both the examples above implements the same 3 bit counter but synthesizer implem
 
 </details>  
 
+## Day4 - GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements
+<details>
+	<summary>
+		 GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements
+	</summary>
+</details>
 
  
  
