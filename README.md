@@ -545,7 +545,7 @@ assign y = sel?i1:i0;
 endmodule
 ```  
 **Synthesis output:**  
-
+![ternary_operator_mux](https://github.com/Rachanaka/iiitb-asic/blob/main/images/ternary_mux_schematic.png)
 **Netlist file**  
 ```
 module ternary_operator_mux(i0, i1, sel, y);
@@ -579,7 +579,6 @@ module ternary_operator_mux(i0, i1, sel, y);
   assign _2_ = sel;
   assign y = _3_;
 endmodule
-
 ```
 I have then simulated the generated netlist in iverilog using the below commands:  
 ```
