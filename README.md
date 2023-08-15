@@ -605,12 +605,40 @@ begin
 end
 endmodule
 ```
+**Netlist output**  
+```
+module bad_mux(i0, i1, sel, y);
+  wire _0_;
+  wire _1_;
+  wire _2_;
+  wire _3_;
+  input i0;
+  wire i0;
+  input i1;
+  wire i1;
+  input sel;
+  wire sel;
+  output y;
+  wire y;
+  sky130_fd_sc_hd__mux2_1 _4_ (
+    .A0(_0_),
+    .A1(_1_),
+    .S(_2_),
+    .X(_3_)
+  );
+  assign _0_ = i0;
+  assign _1_ = i1;
+  assign _2_ = sel;
+  assign y = _3_;
+endmodule
+```
 **Simulation output:**  
 ![bad_mux_simulation_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_simulation_output.png)  
 **Synthesis Output**  
 ![bad_mux_synthesis_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_synthesis-output.png)  
 
 We can clearly see that both the simulation and synthesis outputs do not match, this is because of missing sensitivity list. The synthesizer by default considers all the inputs in the sensitivity list where as we have only considered select line in the sensitivity list. We also also find this message from synthesizer during synthesis:  
+
 ![bad_mux_msg](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_msg.png)  
 
 
