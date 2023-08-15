@@ -739,7 +739,7 @@ It can be clearly seen that we are expecting a 2:1 mux structure and we got a la
 
 </details>  
 <details>
-	<summary>Lab: Incomplete Case statements</summary>  
+	<summary>Lab: Incomplete Overlapping Case statements</summary>  
 
 </details>
  
