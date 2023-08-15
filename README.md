@@ -255,8 +255,8 @@ In digital logic, we know that there are 2 types of logics, Combinational logic 
 </details>  
 
 <details>
-<summary>Combinational logic optimisation techniques- </summary>  
-
+<summary>Combinational logic optimisation techniques </summary>  
+<br>  
 1.Constant propagation optimisation  
       - Direct optimisation  
 2.Boolean logic optimisation  
@@ -339,9 +339,9 @@ This code should ideally realize two and gates and an or gate for logic y, but i
 </details>  
 <details>  
 <summary>  
-	Sequential logic optimisation techniques-  
+	Sequential logic optimisation techniques  
 </summary>
-
+<br>  
 1.Basic  
  	   - Sequential constant propagation  
 2.Advanced  
@@ -473,8 +473,9 @@ endmodule
 </details>
 <details>  
 <summary>  
-	Sequential logic optimisation for unused outputs-  
+	Sequential logic optimisation for unused outputs  
 </summary>  
+<br>  
 While synthesizing the code, by default the yosys synthesizer optimises all the intermediate outputs that do not have a role in producing the primary output of the module, thereby reducing the logic. Consider below two examples for better understanding:  
 
 **Example 1**  
