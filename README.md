@@ -835,7 +835,7 @@ We can see that the error we have created when sel=11 is taken by synthesizer.
 	<summary>Looping Constructs</summary>  
 	
 There are two types of *for* loops - *for loop* and *for generate*. *for loop* is used for evaluating repetative expressions whereas *for generate* is used for instantiating hardware. Also, *for loop* is written inside always block but *for generate* is written outside always block.  
-<br>  
+
 **Example 1 - Mux using For loop**  
 Below is the code present in mux_generate.v:  
 ```
