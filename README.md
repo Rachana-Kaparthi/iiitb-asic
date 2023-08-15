@@ -537,6 +537,7 @@ Workflow of GLS is similar to that of verilog simulation but instead of RTL logi
 
 <details>
 <summary>Labs on GLS</summary>  
+<br>
 	
 **Example 1**  
 Below is the content of the file named ternary_operator_mux.v  
@@ -606,7 +607,7 @@ endmodule
 **Simulation output:**  
 ![bad_mux_simulation_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_simulation_output.png)  
 **Synthesis Output**  
-![bad_mux_synthesis_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_synthesis_output.png)  
+![bad_mux_synthesis_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_synthesis-output.png)  
 
 
 </details>
