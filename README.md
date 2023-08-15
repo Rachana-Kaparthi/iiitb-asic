@@ -687,9 +687,10 @@ endmodule
 ![blocking_caveat_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/blocking_caveat_synthesis.png)  
 
 We can clearly see that both the simulation and synthesis outputs do not match, this is because of using blocking statements in sequential circuits.  
-## If,Case,For Loop and For generate  
 
-</details>
+</details> 
+
+## If,Case,For Loop and For generate  
 
  
  
