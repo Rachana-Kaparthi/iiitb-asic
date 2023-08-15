@@ -252,7 +252,8 @@ Given below is the output of the synthesizer for the same -
 	<summary>Introduction to combinational and sequential circuits</summary>  
 <br>  
 In digital logic, we know that there are 2 types of logics, Combinational logic and Sequential logic. Whatever logic we might be using, optimisation of the logic plays an important role in minimizing the area as well as saving the power. So, in this session we are gonna discuss about some optimisation techniques both in combinational logic and sequential logic.  
-	
+</details>  
+
 <details>
 <summary>Combinational logic optimisation techniques- </summary>  
 
@@ -514,7 +515,7 @@ endmodule
 Both the examples above implements the same 3 bit counter but synthesizer implemented example 1 using only one dff whereas it implemented example 2 using three dffs. This is because the primary output in example 1 depends only on the LSB of the count, hence the other 2 bits of the count are optimised by the synthesizer. But this is not the case in example 2, output in example 2 depends on all the 3 bits of the counter, hence counter is implemented making use of 3 flipflops.  
 
 </details>  
-</details>
+
 
  
  
