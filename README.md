@@ -591,6 +591,7 @@ I have then simulated the generated netlist in iverilog using the below commands
 ```
 **Simulation Output**  
 ![ternary_mux](https://github.com/Rachanaka/iiitb-asic/blob/main/images/ternary_mux_gtk.png)  
+<br>  
 **Example 2**  
 Below is the content of the file named bad_mux.v  
 ```
@@ -608,6 +609,9 @@ endmodule
 ![bad_mux_simulation_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_simulation_output.png)  
 **Synthesis Output**  
 ![bad_mux_synthesis_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_synthesis-output.png)  
+
+We can clearly see that both the simulation and synthesis outputs do not match, this is because of missing sensitivity list. The synthesizer by default considers all the inputs in the sensitivity list where as we have only considered select line in the sensitivity list. We also also find this message from synthesizer during synthesis:  
+![bad_mux_msg](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_msg.png)  
 
 
 </details>
