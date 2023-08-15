@@ -830,6 +830,10 @@ endmodule
 **Netlist simulation**  
 ![bad_case_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_case_synthesis.png)  
 We can see that the error we have created when sel=11 is taken by synthesizer.  
+</details>  
+<details>
+	<summary>Looping Constructs</summary>  
+
 </details>
  
 	
