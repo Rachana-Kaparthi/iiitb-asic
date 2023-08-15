@@ -637,7 +637,7 @@ endmodule
 **Synthesis Output**  
 ![bad_mux_synthesis_output](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_synthesis-output.png)  
 
-We can clearly see that both the simulation and synthesis outputs do not match, this is because of missing sensitivity list. The synthesizer by default considers all the inputs in the sensitivity list where as we have only considered select line in the sensitivity list. We also also find this message from synthesizer during synthesis:  
+We can clearly see that both the simulation and synthesis outputs do not match, this is because of missing sensitivity list. The synthesizer by default considers all the inputs in the sensitivity list where as we have only considered select line in the sensitivity list. In fact synthesizer tells us about this during synthesis:  
 
 ![bad_mux_msg](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_msg.png)  
 
