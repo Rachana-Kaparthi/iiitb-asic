@@ -692,7 +692,27 @@ We can clearly see that both the simulation and synthesis outputs do not match, 
 
 ## Day5 - If,Case,For Loop and For generate  
 <details>
-<summary>If case</summary>	
+<summary>If case constructs</summary>  
+	If statements are nothing but conditional statements, depending upon the condition in the if statement, the code inside the if statement is executed. There can be any number of if else statements. If there is an incomplete if statement then we get inferred latches which is considered as bad coding style.  
+	Even in case construct there can be inferred latches due to incomplete case statements and partial assignments in case statements.  
+</details>  
+<details>
+	<summary>Labs on Incomplete If statements</summary>  
+	
+**Example 1**  
+Below is the content of the file imcomp_if.v  
+```
+module incomp_if (input i0 , input i1 , input i2 , output reg y);
+always @ (*)
+begin
+	if(i0)
+		y <= i1;
+end
+endmodule
+```
+**Simulation output**  
+![incomp_if_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if_simulation.png)  
+
 </details>
  
  
