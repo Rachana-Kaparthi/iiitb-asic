@@ -778,6 +778,34 @@ endmodule
 ![comp_case_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/comp_case_simulation.png)  
 **Synthesis output**  
 ![comp_case_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/comp_case_schematic.png)  
+**Example 3 - Partial case statement**  
+In this case, we have two outputs x, y. We have provided necessary conditions for y in all the case statements but that is not the case with x. So, there is no latch inferred in case of y but we can see a latch in case.
+
+Below is the content of the file partial_case_assign.v 
+```
+module partial_case_assign (input i0 , input i1 , input i2 , input [1:0] sel, output reg y , output reg x);
+always @ (*)
+begin
+	case(sel)
+		2'b00 : begin
+			y = i0;
+			x = i2;
+			end
+		2'b01 : y = i1;
+		default : begin
+		           x = i1;
+			   y = i2;
+			  end
+	endcase
+end
+endmodule
+
+```
+**Simulation output**  
+![partial_case_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/partial_case_simulation.png)  
+**Synthesis output**  
+![partial_case_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/partial_case_schematic.png)  
+
 
 </details>
  
