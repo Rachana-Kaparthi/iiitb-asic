@@ -348,6 +348,7 @@ This code should ideally realize two and gates and an or gate for logic y, but i
 	   - State optimisation <br> 
     	   - Retiming <br>
 	   - Sequential logic colning (Floor plan aware synthesis)  <br>  
+	
 **Sequential Costant**
 In sequential circuits, if output of a flop is always constant irrespective of the whatever inputs are given, it is called a sequential constant.  
 Consider below example-
