@@ -692,7 +692,7 @@ We can clearly see that both the simulation and synthesis outputs do not match, 
 
 ## Day5 - If,Case,For Loop and For generate  
 <details>
-<summary>If case constructs</summary>  
+<summary>If, case constructs</summary>  
 	If statements are nothing but conditional statements, depending upon the condition in the if statement, the code inside the if statement is executed. There can be any number of if else statements. If there is an incomplete if statement then we get inferred latches which is considered as bad coding style.  
 	Even in case construct there can be inferred latches due to incomplete case statements and partial assignments in case statements.  
 </details>  
@@ -740,6 +740,24 @@ It can be clearly seen that we are expecting a 2:1 mux structure and we got a la
 </details>  
 <details>
 	<summary>Lab: Incomplete Overlapping Case statements</summary>  
+	
+**Example 1**  
+Below is the content of the file imcomp_case.v  
+```
+module incomp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
+always @ (*)
+begin
+	case(sel)
+		2'b00 : y = i0;
+		2'b01 : y = i1;
+	endcase
+end
+endmodule
+```
+**Simulation output**  
+![incomp_case_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_case_simulation.png)  
+**Synthesis output**  
+![incomp_case_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_case_schematic.png)
 
 </details>
  
