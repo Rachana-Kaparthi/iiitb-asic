@@ -856,7 +856,7 @@ endmodule
 **Synthesis output**  
 ![mux_generate_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/mux_generate_schematic.png)  
 **Example 2 - Demux using For loop**  
-Below is the code present in mux_generate.v:  
+Below is the code present in demux_generate.v:  
 ```
 module demux_generate (input i0 , input i1, input i2 , input i3 , input [1:0] sel  , output reg y);
 
@@ -878,9 +878,37 @@ endmodule
 ![demux_generate_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/demux_generate_simulation.png)  
 **Synthesis output**  
 ![demux_generate_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/demux_generate_schematic.png)  
+**Example 3 - Ripple Carry Adder using For loop**  
+Below is the code present in rca.v, fa.v:  
+```
+module rca (input [7:0] num1 , input [7:0] num2 , output [8:0] sum);
+wire [7:0] int_sum;
+wire [7:0]int_co;
+
+genvar i;
+generate
+	for (i = 1 ; i < 8; i=i+1) begin
+		fa u_fa_1 (.a(num1[i]),.b(num2[i]),.c(int_co[i-1]),.co(int_co[i]),.sum(int_sum[i]));
+	end
+
+endgenerate
+fa u_fa_0 (.a(num1[0]),.b(num2[0]),.c(1'b0),.co(int_co[0]),.sum(int_sum[0]));
 
 
+assign sum[7:0] = int_sum;
+assign sum[8] = int_co[7];
+endmodule
 
+module fa (input a , input b , input c, output co , output sum);
+	assign {co,sum}  = a + b + c ;
+endmodule
+```
+**Simulation output**  
+![rca_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/rca_simulation.png)  
+**Synthesis output**  
+![rca_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/rca_schematic.png)  
+**Netlist Simulation**  
+![rca_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/rca_synthesis.png)
 
 </details>
  
