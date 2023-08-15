@@ -805,6 +805,31 @@ endmodule
 ![partial_case_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/partial_case_simulation.png)  
 **Synthesis output**  
 ![partial_case_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/partial_case_schematic.png)  
+**Example 4 - Bad case statement**  
+
+Below is the content of the file bad_case.v 
+```
+module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
+always @(*)
+begin
+	case(sel)
+		2'b00: y = i0;
+		2'b01: y = i1;
+		2'b10: y = i2;
+		2'b1?: y = i3;
+		//2'b11: y = i3;
+	endcase
+end
+
+endmodule
+```
+**Simulation output**  
+![bad_case_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_case_simulation.png)  
+**Synthesis output**  
+![bad_case_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_case_schematic.png)  
+**Netlist simulation**  
+![bad_case_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_case_synthesis.png)  
+
 
 
 </details>
