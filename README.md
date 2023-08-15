@@ -735,9 +735,7 @@ endmodule
 **Synthesis output**  
 ![incomp_if2_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_if2_schematic.png)
 
-
-
-It can be clearly seen that we are expecting a mux structure and we got a latch as output due to incomplete if statement.  
+It can be clearly seen that we are expecting a 2:1 mux structure and we got a latch as output due to incomplete if statement.  
 
 </details>
  
