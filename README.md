@@ -592,7 +592,7 @@ I have then simulated the generated netlist in iverilog using the below commands
 **Simulation Output**  
 ![ternary_mux](https://github.com/Rachanaka/iiitb-asic/blob/main/images/ternary_mux_gtk.png)  
 <br>  
-**Example 2**  
+**Example 2: Synthesis-Simulation mismatch due to missing sensitivity list**  
 Below is the content of the file named bad_mux.v  
 ```
 module bad_mux (input i0 , input i1 , input sel , output reg y);
@@ -641,6 +641,52 @@ We can clearly see that both the simulation and synthesis outputs do not match, 
 
 ![bad_mux_msg](https://github.com/Rachanaka/iiitb-asic/blob/main/images/bad_mux_msg.png)  
 
+**Example 3: Synthesis-Simulation mismatch due to blocking/non blocking statements**  
+Below is the content of the file named blocking_caveat.v 
+```
+module blocking_caveat (input a , input b , input  c, output reg d); 
+reg x;
+always @ (*)
+begin
+	d = x & c;
+	x = a | b;
+end
+endmodule
+```
+**Netlist output**  
+```
+module blocking_caveat(a, b, c, d);
+  wire _0_;
+  wire _1_;
+  wire _2_;
+  wire _3_;
+  wire _4_;
+  input a;
+  wire a;
+  input b;
+  wire b;
+  input c;
+  wire c;
+  output d;
+  wire d;
+  sky130_fd_sc_hd__o21a_1 _5_ (
+    .A1(_2_),
+    .A2(_1_),
+    .B1(_3_),
+    .X(_4_)
+  );
+  assign _2_ = b;
+  assign _1_ = a;
+  assign _3_ = c;
+  assign d = _4_;
+endmodule
+```
+**Simulation output:**  
+![blocking_caveat_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/blocking_caveat_simulation.png)  
+**Synthesis Output**  
+![blocking_caveat_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/blocking_caveat_synthesis.png)  
+
+We can clearly see that both the simulation and synthesis outputs do not match, this is because of using blocking statements in sequential circuits.  
 
 </details>
 
