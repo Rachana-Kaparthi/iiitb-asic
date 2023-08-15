@@ -741,7 +741,7 @@ It can be clearly seen that we are expecting a 2:1 mux structure and we got a la
 <details>
 	<summary>Lab: Incomplete Overlapping Case statements</summary>  
 	
-**Example 1**  
+**Example 1 - Incomplete case statement**  
 Below is the content of the file imcomp_case.v  
 ```
 module incomp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
@@ -759,6 +759,25 @@ endmodule
 **Synthesis output**  
 ![incomp_case_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/incomp_case_schematic.png)  
 So, in this example it can be seen that for select=10 or 11, output infers a latch due to incomplete case statement.  
+**Example 2 - Complete case statement**  
+Unlike the above code, in this code we are using default statement. By the mere use of default statement we can see that we have eliminated infer latches:  
+Below is the content of the file comp_case.v  
+```
+module comp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
+always @ (*)
+begin
+	case(sel)
+		2'b00 : y = i0;
+		2'b01 : y = i1;
+		default : y = i2;
+	endcase
+end
+endmodule
+```
+**Simulation output**  
+![comp_case_simulation](https://github.com/Rachanaka/iiitb-asic/blob/main/images/comp_case_simulation.png)  
+**Synthesis output**  
+![comp_case_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/comp_case_schematic.png)  
 
 </details>
  
