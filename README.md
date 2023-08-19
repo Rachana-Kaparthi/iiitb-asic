@@ -909,9 +909,34 @@ endmodule
 **Synthesis output**  
 ![rca_schematic](https://github.com/Rachanaka/iiitb-asic/blob/main/images/rca_schematic.png)  
 **Netlist Simulation**  
-![rca_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/rca_synthesis.png)
+![rca_synthesis](https://github.com/Rachanaka/iiitb-asic/blob/main/images/rca_synthesis.png)  
 
-</details>
+</details>  
+
+## Word of Thanks
+I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to complete this flow smoothly.
+
+## Acknowledgement  
+
+- Kunal Ghosh, VSD Corp. Pvt. Ltd.
+- Skywater Foundry
+- Chatgpt
+- Kanish R,Colleague,IIIT B
+- Sumanto Kar,VSD Corp.
+- Mariam Rakka
+- Alwin Shaju,Colleague,IIIT B
+  
+## Reference 
+
+- https://github.com/YosysHQ/yosys.git
+- https://github.com/The-OpenROAD-Project/OpenSTA.git
+- https://github.com/kunalg123
+- https://www.vsdiat.com
+- https://github.com/mariamrakka
+- https://github.com/riscv/riscv-gnu-toolchain
+- https://github.com/KanishR1
+- https://github.com/alwinshaju08
+- https://github.com/riscv-software-src/homebrew-riscv/tree/main
  
 	
 
