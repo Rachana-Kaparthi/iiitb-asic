@@ -933,10 +933,8 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 - https://github.com/kunalg123
 - https://www.vsdiat.com
 - https://github.com/mariamrakka
-- https://github.com/riscv/riscv-gnu-toolchain
 - https://github.com/KanishR1
 - https://github.com/alwinshaju08
-- https://github.com/riscv-software-src/homebrew-riscv/tree/main
  
 	
 
